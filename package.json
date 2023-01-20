@@ -69,7 +69,7 @@
     "coverage": "standard --fix && gulp build && npm test && istanbul cover _mocha -- --recursive --timeout 5000",
     "build": "standard --fix && gulp",
     "prepare": "npm run build && npm run rewrite-changelog",
-    "prepack": "npm run prepare"
+    "prepack": "npm run prepare",
     "prepublishOnly": "standard --fix && npm run build && npm run rewrite-changelog && npm test && mocha test --recursive --timeout 5000 --reporter dot && istanbul cover _mocha -- --recursive --timeout 5000",
     "ci-publish": "ci-publish",
     "release": "standard-version -a",
